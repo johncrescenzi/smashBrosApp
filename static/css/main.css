@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.grid-container{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(13, auto)
+}
+.iconImg {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  border: 0.01rem solid black;
+}
+.form-control {
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+input {
+  text-align: center;
+}
+
+.disabled {
+  opacity: 0.5;
+}
