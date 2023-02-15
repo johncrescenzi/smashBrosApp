@@ -10,15 +10,75 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@1.10.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 
+<script src="https://cdn.tailwindcss.com"></script>
+
 <body>
-<!--Navigation-->
-    <div class="tabs">
-        <a class="tab tab-bordered span-3">Back</a> 
-        <a class="tab tab-bordered tab-active">Jab 1</a> 
-        <a class="tab tab-bordered">-></a>
+
+<!--Carousel-->
+<div class="carousel w-full">
+    <div id="item1" class="carousel-item w-full">
+      <img src="{{url_for('static', filename='images/moves/Corrin/CorrinJab1.gif')}}" class="w-full" />
+    </div> 
+    <div id="item2" class="carousel-item w-full">
+      <img src="{{url_for('static', filename='images/moves/Corrin/CorrinJab2.gif')}}" class="w-full" />
+    </div> 
+    <div id="item3" class="carousel-item w-full">
+      <img src="{{url_for('static', filename='images/moves/Corrin/CorrinJab3.gif')}}" class="w-full" />
+    </div> 
+    <div id="item4" class="carousel-item w-full">
+      <img src="{{url_for('static', filename='images/moves/Corrin/CorrinJabRapid.gif')}}" class="w-full" />
+    </div>
+    <div id="item5" class="carousel-item w-full">
+        <img src="{{url_for('static', filename='images/moves/Corrin/CorrinJabRapidEnd.gif')}}" class="w-full" />
       </div>
+  </div>
+  <div class="flex justify-center w-full py-2 gap-2">
+    <a href="#item1" class="btn btn-xs">Jab 1</a> 
+    <a href="#item2" class="btn btn-xs">Jab 2</a> 
+    <a href="#item3" class="btn btn-xs">Jab 3</a> 
+    <a href="#item4" class="btn btn-xs">Rapid Jab</a>
+    <a href="#item5" class="btn btn-xs">Rapid Jab End</a>
+  </div>
+
+  <div class="frame-bars">
+  <progress class="progress progress-warning w-56" value="100" max="100"></progress>
+  <progress class="progress progress-success w-56" value="100" max="100"></progress>
+  <progress class="progress progress-error w-56" value="100" max="100"></progress>
+  <progress class="progress w-56" value="100" max="100"><p>{{total}} Frames</p></progress>
+</div>
+
+<div class="flex w-full">
+    
+   
+
+  </div>
+
+  <div>
+    <div class="flex justify-center w-full py-2 gap-2">
+        <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Damage</div>
+        <div class="divider divider-horizontal"></div>
+    <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Shield Stun</div>
+    <div class="divider divider-horizontal"></div> 
+    <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Shield Stun</div> 
+  </div><div class="flex justify-center w-full py-2 gap-2">
+    <a href="#item1">2.0% - 2.5%</a> 
+    <a href="#item2">7 - 8</a> 
+    <a href="#item3">3 - 4</a> 
+    
+    
+  </div>
+
+  <p>Note: Transitions to jab 2 as early as frame 9</p>
+    
+    
+    
+</div>
+  
+
+
 
 <!--Top Card-->
+<!--
     <div class="card w-96 glass">
         <figure><img src="{{url_for('static', filename='images/CorrinJab1.gif')}}" alt="car!"/></figure>
         <div class="card-body">
@@ -26,84 +86,102 @@
           <p>Note transitions to jab 3 as early as frame 9 and rapid as early as 8</p>
         </div>
       </div>
-
-<!--Button Navigation-->
-<div class="tabs">
-    <a class="tab tab-bordered">Grounded</a> 
-    <a class="tab tab-bordered tab-active">Aerial</a> 
-    <a class="tab tab-bordered">Getup</a>
-</div>
+    -->
 
 <!--Buttons-->
-
 <div class="buttons-grid-container">
-    <div class="button circleButton">
-    <img src="{{url_for('static', filename='images/buttonA.png')}}" alt=""/>
-    </div>
-    <div class="button">
-    <img src="{{url_for('static', filename='images/upArrow.png')}}" alt=""/>
-    </div>
-    <div class="button">
-    <img src="{{url_for('static', filename='images/leftArrow.png')}}" alt=""/>
-    </div>
-    <div class="button">
-    <img src="{{url_for('static', filename='images/rightArrow.png')}}" alt=""/>
-    </div>
-    <div class="button">
-    <img src="{{url_for('static', filename='images/downArrow.png')}}" alt=""/>
-    </div> 
+    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">A</kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.39 265.4l127.1-128C143.6 131.1 151.8 128 160 128s16.38 3.125 22.63 9.375l127.1 128c9.156 9.156 11.9 22.91 6.943 34.88S300.9 320 287.1 320H32.01c-12.94 0-24.62-7.781-29.58-19.75S.2333 274.5 9.39 265.4z"/></svg>
+        <span class="sr-only">Arrow key up</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+        <span class="sr-only">Arrow key down</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/></svg>
+        <span class="sr-only">Arrow key left</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"/></svg>
+        <span class="sr-only">Arrow key right</span>
+    </kbd>
 
-        <div class="button circleButton">
-        <img src="{{url_for('static', filename='images/buttonA.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/upArrow.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/leftArrow.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/rightArrow.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/downArrow.png')}}" alt=""/>
-        </div>
+    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Smash</kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.39 265.4l127.1-128C143.6 131.1 151.8 128 160 128s16.38 3.125 22.63 9.375l127.1 128c9.156 9.156 11.9 22.91 6.943 34.88S300.9 320 287.1 320H32.01c-12.94 0-24.62-7.781-29.58-19.75S.2333 274.5 9.39 265.4z"/></svg>
+        <span class="sr-only">Arrow key up</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+        <span class="sr-only">Arrow key down</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/></svg>
+        <span class="sr-only">Arrow key left</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"/></svg>
+        <span class="sr-only">Arrow key right</span>
+    </kbd>
 
-        <div class="button circleButton">
-        <img src="{{url_for('static', filename='images/buttonB.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/upArrow.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/leftArrow.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/rightArrow.png')}}" alt=""/>
-        </div>
-        <div class="button">
-        <img src="{{url_for('static', filename='images/downArrow.png')}}" alt=""/>
-        </div> 
+    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">B</kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.39 265.4l127.1-128C143.6 131.1 151.8 128 160 128s16.38 3.125 22.63 9.375l127.1 128c9.156 9.156 11.9 22.91 6.943 34.88S300.9 320 287.1 320H32.01c-12.94 0-24.62-7.781-29.58-19.75S.2333 274.5 9.39 265.4z"/></svg>
+        <span class="sr-only">Arrow key up</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+        <span class="sr-only">Arrow key down</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/></svg>
+        <span class="sr-only">Arrow key left</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"/></svg>
+        <span class="sr-only">Arrow key right</span>
+    </kbd>
 
-            <div class="button circleButton">
-            <img src="{{url_for('static', filename='images/buttonZ.png')}}" alt=""/>
-            </div>
-            <div class="button">
-            <img src="{{url_for('static', filename='images/upArrow.png')}}" alt=""/>
-            </div>
-            <div class="button">
-            <img src="{{url_for('static', filename='images/leftArrow.png')}}" alt=""/>
-            </div>
-            <div class="button">
-            <img src="{{url_for('static', filename='images/rightArrow.png')}}" alt=""/>
-            </div>
-            <div class="button">
-            <img src="{{url_for('static', filename='images/downArrow.png')}}" alt=""/>
-            </div> 
-            
-     
-
+    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Z</kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.39 265.4l127.1-128C143.6 131.1 151.8 128 160 128s16.38 3.125 22.63 9.375l127.1 128c9.156 9.156 11.9 22.91 6.943 34.88S300.9 320 287.1 320H32.01c-12.94 0-24.62-7.781-29.58-19.75S.2333 274.5 9.39 265.4z"/></svg>
+        <span class="sr-only">Arrow key up</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+        <span class="sr-only">Arrow key down</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/></svg>
+        <span class="sr-only">Arrow key left</span>
+    </kbd>
+    <kbd class="inline-flex items-center px-2 py-1.5 text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+        <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"/></svg>
+        <span class="sr-only">Arrow key right</span>
+    </kbd>
 </div>
+            <!--Button Navigation-->
+            <div class="tabs">
+                <a class="tab tab-bordered">Grounded</a> 
+                <a class="tab tab-bordered tab-active">Aerial</a> 
+                <a class="tab tab-bordered">Getup</a>
+            </div>
+
+            <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">q</kbd>
+                <kbd class="kbd">w</kbd>
+                <kbd class="kbd">e</kbd>
+                <kbd class="kbd">r</kbd>
+                <kbd class="kbd">t</kbd>
+                <kbd class="kbd">y</kbd>
+                <kbd class="kbd">u</kbd>
+                <kbd class="kbd">i</kbd>
+                <kbd class="kbd">o</kbd>
+                <kbd class="kbd">p</kbd>
+              </div> 
+
 
 <!----------------------->
 </body>  
