@@ -54,7 +54,7 @@ div.tabs {
 
 /*-----Card-----*/
 div.card {
-  height: 60vh;
+  height: 10vh;
   width: 100vw;
 }
 div.card img {
@@ -62,12 +62,18 @@ height: 100%;
 width: 100%;
 object-fit: cover;
 }
+
+.frame-length .startup {
+  background-color: green;
+  border-radius: 50px;
+}
 div.card-body {
   height:30vh;
   width: 100vw;
 }
 /* Buttons */
 .buttons-grid-container{
+  height:25vh;
   width:100vw;
   display: grid;
   grid-template-columns: repeat(5, auto);
