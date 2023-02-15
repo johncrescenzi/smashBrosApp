@@ -29,7 +29,7 @@
         if (textValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.opacity = "1";
         } else {
-            li[i].style.opacity = "0.5";
+            li[i].style.opacity = "0.33";
         }
     }
 }
@@ -39,291 +39,294 @@
 <body>
 <!-- Character Selection Grid-->
 <div class="characterSelection">
-    <ul id="characterList" class="grid-container">
+    <ul id="characterList" class="character-grid-container">
         <div class="character mario">
-            <li>
-            <a href="#">
-                <img id="1" src="{{url_for('static', filename='images/1.png')}}" alt="Icon 1" ></img>
-            <p style="display:none">Mario</p></a>
-            </li>
+            <li><a href="#"><img id="1" src="{{url_for('static', filename='images/1.png')}}" alt="Mario Icon" ></img><p style="display:none">Mario</p></a></li>
         </div>
-        <figure class="characterIcon icon2">
-            <img src="{{url_for('static', filename='images/2.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon3">
-            <img src="{{url_for('static', filename='images/3.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon4">
-            <img src="{{url_for('static', filename='images/4.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon4a">
-            <img src="{{url_for('static', filename='images/4a.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon5">
-            <img src="{{url_for('static', filename='images/5.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon6">
-            <img src="{{url_for('static', filename='images/6.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon7">
-            <img src="{{url_for('static', filename='images/7.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon8">
-            <img src="{{url_for('static', filename='images/8.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon9">
-            <img src="{{url_for('static', filename='images/9.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon10">
-            <img src="{{url_for('static', filename='images/10.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon11">
-            <img src="{{url_for('static', filename='images/11.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon12">
-            <img src="{{url_for('static', filename='images/12.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon13">
-            <img src="{{url_for('static', filename='images/13.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon13a">
-            <img src="{{url_for('static', filename='images/13a.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon14">
-            <img src="{{url_for('static', filename='images/14.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon15">
-            <img src="{{url_for('static', filename='images/15.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon16">
-            <img src="{{url_for('static', filename='images/16.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon17">
-            <img src="{{url_for('static', filename='images/17.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon18">
-            <img src="{{url_for('static', filename='images/18.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon19">
-            <img src="{{url_for('static', filename='images/19.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon20">
-            <img src="{{url_for('static', filename='images/20.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        
-        <figure class="characterIcon icon21">
-            <img src="{{url_for('static', filename='images/21.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon21a">
-            <img src="{{url_for('static', filename='images/21a.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon22">
-            <img src="{{url_for('static', filename='images/22.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon23">
-            <img src="{{url_for('static', filename='images/23.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon24">
-            <img src="{{url_for('static', filename='images/24.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon25">
-            <img src="{{url_for('static', filename='images/25.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon25a">
-            <img src="{{url_for('static', filename='images/25a.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon26">
-            <img src="{{url_for('static', filename='images/26.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon27">
-            <img src="{{url_for('static', filename='images/27.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon28">
-            <img src="{{url_for('static', filename='images/28.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon28a">
-            <img src="{{url_for('static', filename='images/28a.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon29">
-            <img src="{{url_for('static', filename='images/29.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon30">
-            <img src="{{url_for('static', filename='images/30.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon31">
-            <img src="{{url_for('static', filename='images/31.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon32">
-            <img src="{{url_for('static', filename='images/32.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon33">
-            <img src="{{url_for('static', filename='images/33.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon34">
-            <img src="{{url_for('static', filename='images/34.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon35">
-            <img src="{{url_for('static', filename='images/35.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon36">
-            <img src="{{url_for('static', filename='images/36.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon37">
-            <img src="{{url_for('static', filename='images/37.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon38">
-            <img src="{{url_for('static', filename='images/38.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon39">
-            <img src="{{url_for('static', filename='images/39.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-         <figure class="characterIcon icon40">
-            <img src="{{url_for('static', filename='images/40.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon41">
-            <img src="{{url_for('static', filename='images/41.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon42">
-            <img src="{{url_for('static', filename='images/42.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon43">
-            <img src="{{url_for('static', filename='images/43.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon44">
-            <img src="{{url_for('static', filename='images/44.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon45">
-            <img src="{{url_for('static', filename='images/45.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon46">
-            <img src="{{url_for('static', filename='images/46.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon47">
-            <img src="{{url_for('static', filename='images/47.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon48">
-            <img src="{{url_for('static', filename='images/48.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon49">
-            <img src="{{url_for('static', filename='images/49.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon50">
-            <img src="{{url_for('static', filename='images/50.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon51">
-            <img src="{{url_for('static', filename='images/51.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon52">
-            <img src="{{url_for('static', filename='images/52.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon53">
-            <img src="{{url_for('static', filename='images/53.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon54">
-            <img src="{{url_for('static', filename='images/54.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon55">
-            <img src="{{url_for('static', filename='images/55.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon56">
-            <img src="{{url_for('static', filename='images/56.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon57">
-            <img src="{{url_for('static', filename='images/57.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon58">
-            <img src="{{url_for('static', filename='images/58.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon59">
-            <img src="{{url_for('static', filename='images/59.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon60">
-            <img src="{{url_for('static', filename='images/60.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon60a">
-            <img src="{{url_for('static', filename='images/60a.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon61">
-            <img src="{{url_for('static', filename='images/61.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon62">
-            <img src="{{url_for('static', filename='images/62.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon63">
-            <img src="{{url_for('static', filename='images/63.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon64">
-            <img src="{{url_for('static', filename='images/64.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon65">
-            <img src="{{url_for('static', filename='images/65.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon66">
-            <img src="{{url_for('static', filename='images/66.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon66a">
-            <img src="{{url_for('static', filename='images/66a.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon67">
-            <img src="{{url_for('static', filename='images/67.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon68">
-            <img src="{{url_for('static', filename='images/68.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon69">
-            <img src="{{url_for('static', filename='images/69.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon70">
-            <img src="{{url_for('static', filename='images/70.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon71a">
-            <img src="{{url_for('static', filename='images/71.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon72">
-            <img src="{{url_for('static', filename='images/72.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon73">
-            <img src="{{url_for('static', filename='images/73.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon74">
-            <img src="{{url_for('static', filename='images/74.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon75">
-            <img src="{{url_for('static', filename='images/75.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon76">
-            <img src="{{url_for('static', filename='images/76.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon77">
-            <img src="{{url_for('static', filename='images/77.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon78">
-            <img src="{{url_for('static', filename='images/78.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon79">
-            <img src="{{url_for('static', filename='images/79.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon80">
-            <img src="{{url_for('static', filename='images/80.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon81">
-            <img src="{{url_for('static', filename='images/81.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon icon82">
-            <img src="{{url_for('static', filename='images/82.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon iconRandom">
-            <img src="{{url_for('static', filename='images/random.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
-        <figure class="characterIcon iconInfo">
-            <img src="{{url_for('static', filename='images/info.png')}}" class="iconImg" alt="Icon 1">
-        </figure>
+        <div class="character donkey_kong">
+            <li><a href="#"><img id="2" src="{{url_for('static', filename='images/2.png')}}" alt="Donkey Kong Icon" ></img><p style="display:none">Donkey Kong</p></a></li>
+        </div>
+        <div class="character link">
+            <li><a href="#"><img id="3" src="{{url_for('static', filename='images/3.png')}}" alt="Link Icon" ></img><p style="display:none">Link</p></a></li>
+        </div>
+        <div class="character samus">
+            <li><a href="#"><img id="4" src="{{url_for('static', filename='images/4.png')}}" alt="Samus Icon" ></img><p style="display:none">Link</p></a></li>
+        </div>
+        <div class="character dark_samus">
+            <li><a href="#"><img id="4a" src="{{url_for('static', filename='images/4a.png')}}" alt="Dark Samus Icon" ></img><p style="display:none">Link</p></a></li>
+        </div>
+        <div class="character yoshi">
+            <li><a href="#"><img id="5" src="{{url_for('static', filename='images/5.png')}}" alt="Yoshi Icon" ></img><p style="display:none">Yoshi</p></a></li>
+        </div>
+        <div class="character kirby">
+            <li><a href="#"><img id="6" src="{{url_for('static', filename='images/6.png')}}" alt="Kirby Icon" ></img><p style="display:none">Kirby</p></a></li>
+        </div>
+        <div class="character fox">
+            <li><a href="#"><img id="7" src="{{url_for('static', filename='images/7.png')}}" alt="Fox Icon" ></img><p style="display:none">Fox</p></a></li>
+        </div>
+        <div class="character pikachu">
+            <li><a href="#"><img id="8" src="{{url_for('static', filename='images/8.png')}}" alt="Pikachu Icon" ></img><p style="display:none">Pikachu</p></a></li>
+        </div>
+        <div class="character luigi">
+            <li><a href="#"><img id="9" src="{{url_for('static', filename='images/9.png')}}" alt="Luigi Icon" ></img><p style="display:none">Luigi</p></a></li>
+        </div>
+<!--10-->
+        <div class="character ness">
+            <li><a href="#"><img id="10" src="{{url_for('static', filename='images/10.png')}}" alt="Ness Icon" ></img><p style="display:none">Ness</p></a></li>
+        </div>
+        <div class="character captain_falcon">
+            <li><a href="#"><img id="11" src="{{url_for('static', filename='images/11.png')}}" alt="Captain Falcon Icon" ></img><p style="display:none">Captain Falcon</p></a></li>
+        </div>
+        <div class="character jigglypuff">
+            <li><a href="#"><img id="12" src="{{url_for('static', filename='images/12.png')}}" alt="Jigglypuff Icon" ></img><p style="display:none">Jigglypuff</p></a></li>
+        </div>
+        <div class="character peach">
+            <li><a href="#"><img id="13" src="{{url_for('static', filename='images/13.png')}}" alt="Peach Icon" ></img><p style="display:none">Peach</p></a></li>
+        </div>
+        <div class="character daisy">
+            <li><a href="#"><img id="13a" src="{{url_for('static', filename='images/13a.png')}}" alt="Daisy Icon" ></img><p style="display:none">Daisy</p></a></li>
+        </div>
+        <div class="character bowser">
+            <li><a href="#"><img id="14" src="{{url_for('static', filename='images/14.png')}}" alt="Bowser Icon" ></img><p style="display:none">Bowser</p></a></li>
+        </div>
+        <div class="character ice_climbers">
+            <li><a href="#"><img id="15" src="{{url_for('static', filename='images/15.png')}}" alt="Ice Climbers Icon" ></img><p style="display:none">Ice Climbers</p></a></li>
+        </div>
+        <div class="character shiek">
+            <li><a href="#"><img id="16" src="{{url_for('static', filename='images/16.png')}}" alt="Shiek Icon" ></img><p style="display:none">Shiek</p></a></li>
+        </div>
+        <div class="character zelda">
+            <li><a href="#"><img id="17" src="{{url_for('static', filename='images/17.png')}}" alt="Zelda Icon" ></img><p style="display:none">Zelda</p></a></li>
+        </div>
+        <div class="character doctor_mario">
+            <li><a href="#"><img id="18" src="{{url_for('static', filename='images/18.png')}}" alt="Doctor Mario Icon" ></img><p style="display:none">Doctor Mario</p></a></li>
+        </div>
+<!--20-->
+        <div class="character pichu">
+            <li><a href="#"><img id="19" src="{{url_for('static', filename='images/19.png')}}" alt="Pichu Icon" ></img><p style="display:none">Pichu</p></a></li>
+        </div>
+        <div class="character falco">
+            <li><a href="#"><img id="20" src="{{url_for('static', filename='images/20.png')}}" alt="Falco Icon" ></img><p style="display:none">Falco</p></a></li>
+        </div>
+        <div class="character marth">
+            <li><a href="#"><img id="21" src="{{url_for('static', filename='images/21.png')}}" alt="Marth Icon" ></img><p style="display:none">Marth</p></a></li>
+        </div>
+        <div class="character lucina">
+            <li><a href="#"><img id="21a" src="{{url_for('static', filename='images/21a.png')}}" alt="Lucina Icon" ></img><p style="display:none">Lucina</p></a></li>
+        </div>
+        <div class="character young_link">
+            <li><a href="#"><img id="22" src="{{url_for('static', filename='images/22.png')}}" alt="Young Link Icon" ></img><p style="display:none">Young Link</p></a></li>
+        </div>
+        <div class="character ganondorf">
+            <li><a href="#"><img id="23" src="{{url_for('static', filename='images/23.png')}}" alt="Ganondorf Icon" ></img><p style="display:none">Ganondorf</p></a></li>
+        </div>
+        <div class="character mewtwo">
+            <li><a href="#"><img id="24" src="{{url_for('static', filename='images/24.png')}}" alt="Mewtwo Icon" ></img><p style="display:none">Mewtwo</p></a></li>
+        </div>
+        <div class="character roy">
+            <li><a href="#"><img id="25" src="{{url_for('static', filename='images/25.png')}}" alt="Roy Icon" ></img><p style="display:none">Roy</p></a></li>
+        </div>
+        <div class="character chrom">
+            <li><a href="#"><img id="25a" src="{{url_for('static', filename='images/25a.png')}}" alt="Chrom Icon" ></img><p style="display:none">Chrom</p></a></li>
+        </div>
+        <div class="character game_and_watch">
+            <li><a href="#"><img id="26" src="{{url_for('static', filename='images/26.png')}}" alt="Game and Watch Icon" ></img><p style="display:none">Game and Watch</p></a></li>
+        </div>
+<!--30-->
+        <div class="character metaknight">
+            <li><a href="#"><img id="27" src="{{url_for('static', filename='images/27.png')}}" alt="Pichu Icon" ></img><p style="display:none">Pichu</p></a></li>
+        </div>
+        <div class="character pit">
+            <li><a href="#"><img id="28" src="{{url_for('static', filename='images/28.png')}}" alt="Pit Icon" ></img><p style="display:none">Pit</p></a></li>
+        </div>
+        <div class="character dark_pit">
+            <li><a href="#"><img id="28a" src="{{url_for('static', filename='images/28a.png')}}" alt="Dark Pit Icon" ></img><p style="display:none">Dark Pit</p></a></li>
+        </div>
+        <div class="character zero_suit_samus">
+            <li><a href="#"><img id="29" src="{{url_for('static', filename='images/29.png')}}" alt="Zero Suit Samus Icon" ></img><p style="display:none">Zero Suit Samus</p></a></li>
+        </div>
+        <div class="character wario">
+            <li><a href="#"><img id="30" src="{{url_for('static', filename='images/30.png')}}" alt="Wario Icon" ></img><p style="display:none">Wario</p></a></li>
+        </div>
+        <div class="character snake">
+            <li><a href="#"><img id="31" src="{{url_for('static', filename='images/31.png')}}" alt="Snake Icon" ></img><p style="display:none">Snake</p></a></li>
+        </div>
+        <div class="character ike">
+            <li><a href="#"><img id="32" src="{{url_for('static', filename='images/32.png')}}" alt="Ike Icon" ></img><p style="display:none">Ike</p></a></li>
+        </div>
+        <div class="character squirtle">
+            <li><a href="#"><img id="33" src="{{url_for('static', filename='images/33.png')}}" alt="Squirtle Icon" ></img><p style="display:none">Squirtle</p></a></li>
+        </div>
+        <div class="character ivysaur">
+            <li><a href="#"><img id="34" src="{{url_for('static', filename='images/34.png')}}" alt="Ivysaur Icon" ></img><p style="display:none">Ivysaur</p></a></li>
+        </div>
+        <div class="character charizard">
+            <li><a href="#"><img id="35" src="{{url_for('static', filename='images/35.png')}}" alt="Charizard Icon" ></img><p style="display:none">Charizard</p></a></li>
+        </div>
+<!--40-->
+        <div class="character diddy_kong">
+            <li><a href="#"><img id="36" src="{{url_for('static', filename='images/36.png')}}" alt="Diddy Kong Icon" ></img><p style="display:none">Diddy Kong</p></a></li>
+        </div>
+        <div class="character lucas">
+            <li><a href="#"><img id="37" src="{{url_for('static', filename='images/37.png')}}" alt="Lucas Icon" ></img><p style="display:none">Lucas</p></a></li>
+        </div>
+        <div class="character sonic">
+            <li><a href="#"><img id="38" src="{{url_for('static', filename='images/38.png')}}" alt="Sonic Icon" ></img><p style="display:none">Sonic</p></a></li>
+        </div>
+        <div class="character king_dedede">
+            <li><a href="#"><img id="39" src="{{url_for('static', filename='images/39.png')}}" alt="King Dedede Icon" ></img><p style="display:none">King Dedede</p></a></li>
+        </div>
+        <div class="character olimar">
+            <li><a href="#"><img id="40" src="{{url_for('static', filename='images/40.png')}}" alt="Olimar Icon" ></img><p style="display:none">Olimar</p></a></li>
+        </div>
+        <div class="character lucario">
+            <li><a href="#"><img id="41" src="{{url_for('static', filename='images/41.png')}}" alt="Lucario Icon" ></img><p style="display:none">Lucario</p></a></li>
+        </div>
+        <div class="character rob">
+            <li><a href="#"><img id="42" src="{{url_for('static', filename='images/42.png')}}" alt="Rob Icon" ></img><p style="display:none">Rob</p></a></li>
+        </div>
+        <div class="character toon_link">
+            <li><a href="#"><img id="43" src="{{url_for('static', filename='images/43.png')}}" alt="Toon Link Icon" ></img><p style="display:none">Toon Link</p></a></li>
+        </div>
+        <div class="character wolf">
+            <li><a href="#"><img id="44" src="{{url_for('static', filename='images/44.png')}}" alt="Wolf Icon" ></img><p style="display:none">Wolf</p></a></li>
+        </div>
+        <div class="character villager">
+            <li><a href="#"><img id="45" src="{{url_for('static', filename='images/45.png')}}" alt="Villager Icon" ></img><p style="display:none">Villager</p></a></li>
+        </div>
+<!--50-->
+        <div class="character megaman">
+            <li><a href="#"><img id="46" src="{{url_for('static', filename='images/46.png')}}" alt="Megaman Icon" ></img><p style="display:none">Megaman</p></a></li>
+        </div>
+        <div class="character wii_fit_trainer">
+            <li><a href="#"><img id="47" src="{{url_for('static', filename='images/47.png')}}" alt="Wii Fit Trainer Icon" ></img><p style="display:none">Wii Fit Trainer Icon</p></a></li>
+        </div>
+        <div class="character rosaline_and_luma">
+            <li><a href="#"><img id="48" src="{{url_for('static', filename='images/48.png')}}" alt="Rosalina and Luma Icon" ></img><p style="display:none">Rosaline and Luma</p></a></li>
+        </div>
+        <div class="character little_mac">
+            <li><a href="#"><img id="49" src="{{url_for('static', filename='images/49.png')}}" alt="Little Mac Icon" ></img><p style="display:none">Little Mac</p></a></li>
+        </div>
+        <div class="character greninja">
+            <li><a href="#"><img id="50" src="{{url_for('static', filename='images/50.png')}}" alt="Greninja Icon" ></img><p style="display:none">Greninja</p></a></li>
+        </div>
+        <div class="character mii_brawler">
+            <li><a href="#"><img id="51" src="{{url_for('static', filename='images/51.png')}}" alt="Mii Brawler Icon" ></img><p style="display:none">Mii Brawler</p></a></li>
+        </div>
+        <div class="character mii_swordfighter">
+            <li><a href="#"><img id="52" src="{{url_for('static', filename='images/52.png')}}" alt="Mii Swordfighter Icon" ></img><p style="display:none">Mii Swordfighter</p></a></li>
+        </div>
+        <div class="character mii_gunner">
+            <li><a href="#"><img id="53" src="{{url_for('static', filename='images/53.png')}}" alt="Mii Gunner Icon" ></img><p style="display:none">Mii Gunner</p></a></li>
+        </div>
+        <div class="character palutena">
+            <li><a href="#"><img id="54" src="{{url_for('static', filename='images/54.png')}}" alt="Palutena Icon" ></img><p style="display:none">Palutena</p></a></li>
+        </div>
+        <div class="character pacman">
+            <li><a href="#"><img id="55" src="{{url_for('static', filename='images/55.png')}}" alt="Pacman Icon" ></img><p style="display:none">Pacman</p></a></li>
+        </div>
+<!--60-->
+        <div class="character robin">
+            <li><a href="#"><img id="56" src="{{url_for('static', filename='images/56.png')}}" alt="Robin Icon" ></img><p style="display:none">Robin</p></a></li>
+        </div>
+        <div class="character shulk">
+            <li><a href="#"><img id="57" src="{{url_for('static', filename='images/57.png')}}" alt="Shulk Icon" ></img><p style="display:none">Shulk</p></a></li>
+        </div>
+        <div class="character bowser_junior">
+            <li><a href="#"><img id="58" src="{{url_for('static', filename='images/58.png')}}" alt="Bowser Junior Icon" ></img><p style="display:none">Bowser Junior</p></a></li>
+        </div>
+        <div class="character duck_hunt">
+            <li><a href="#"><img id="59" src="{{url_for('static', filename='images/59.png')}}" alt="Duck Hunt Icon" ></img><p style="display:none">Duck Hunt</p></a></li>
+        </div>
+        <div class="character ryu">
+            <li><a href="#"><img id="60" src="{{url_for('static', filename='images/60.png')}}" alt="Ryu Icon" ></img><p style="display:none">Ryu</p></a></li>
+        </div>
+        <div class="character ken">
+            <li><a href="#"><img id="60a" src="{{url_for('static', filename='images/60a.png')}}" alt="Ken Icon" ></img><p style="display:none">Ken</p></a></li>
+        </div>
+        <div class="character cloud">
+            <li><a href="#"><img id="61" src="{{url_for('static', filename='images/61.png')}}" alt="Cloud Icon" ></img><p style="display:none">Cloud</p></a></li>
+        </div>
+        <div class="character corrin">
+            <li><a href="moves/corrin"><img id="62" src="{{url_for('static', filename='images/62.png')}}" alt="Corrin Icon" ></img><p style="display:none">Corrin</p></a></li>
+        </div>
+        <div class="character bayonetta">
+            <li><a href="#"><img id="63" src="{{url_for('static', filename='images/63.png')}}" alt="Bayonetta Icon" ></img><p style="display:none">Bayonetta</p></a></li>
+        </div>
+        <div class="character inkling">
+            <li><a href="#"><img id="64" src="{{url_for('static', filename='images/64.png')}}" alt="Inkling Icon" ></img><p style="display:none">Inkling</p></a></li>
+        </div>
+<!--70-->
+        <div class="character ridley">
+            <li><a href="#"><img id="65" src="{{url_for('static', filename='images/65.png')}}" alt="Ridley Icon" ></img><p style="display:none">Ridley</p></a></li>
+        </div>
+        <div class="character simon">
+            <li><a href="#"><img id="66" src="{{url_for('static', filename='images/66.png')}}" alt="Simon Icon" ></img><p style="display:none">Simon</p></a></li>
+        </div>
+        <div class="character richter">
+            <li><a href="#"><img id="66a" src="{{url_for('static', filename='images/66a.png')}}" alt="Richter Icon" ></img><p style="display:none">Richter</p></a></li>
+        </div>
+        <div class="character king_k_rool">
+            <li><a href="#"><img id="67" src="{{url_for('static', filename='images/67.png')}}" alt="King K Rool Icon" ></img><p style="display:none">King K Rool</p></a></li>
+        </div>
+        <div class="character isabel">
+            <li><a href="#"><img id="68" src="{{url_for('static', filename='images/68.png')}}" alt="Isabel Icon" ></img><p style="display:none">Isabel</p></a></li>
+        </div>
+        <div class="character incineroar">
+            <li><a href="#"><img id="69" src="{{url_for('static', filename='images/69.png')}}" alt="Incineroar Icon" ></img><p style="display:none">Incineroar</p></a></li>
+        </div>
+        <div class="character piranha_plant">
+            <li><a href="#"><img id="70" src="{{url_for('static', filename='images/70.png')}}" alt="Piranha Plant Icon" ></img><p style="display:none">Piranha Plant</p></a></li>
+        </div>
+        <div class="character joker">
+            <li><a href="#"><img id="71" src="{{url_for('static', filename='images/71.png')}}" alt="Joker Icon" ></img><p style="display:none">Joker</p></a></li>
+        </div>
+        <div class="character hero">
+            <li><a href="#"><img id="72" src="{{url_for('static', filename='images/72.png')}}" alt="Hero Icon" ></img><p style="display:none">Hero</p></a></li>
+        </div>
+        <div class="character banjo_and_kazooie">
+            <li><a href="#"><img id="73" src="{{url_for('static', filename='images/73.png')}}" alt="Banjo and Kazooie Icon" ></img><p style="display:none">Banjo and Kazooie</p></a></li>
+        </div>
+<!--80-->
+        <div class="character terry">
+            <li><a href="#"><img id="74" src="{{url_for('static', filename='images/74.png')}}" alt="Terry Icon" ></img><p style="display:none">Terry</p></a></li>
+        </div>
+        <div class="character byleth">
+            <li><a href="#"><img id="75" src="{{url_for('static', filename='images/75.png')}}" alt="Byleth Icon" ></img><p style="display:none">Byleth</p></a></li>
+        </div>
+        <div class="character minmin">
+            <li><a href="#"><img id="76" src="{{url_for('static', filename='images/76.png')}}" alt="Minmin Icon" ></img><p style="display:none">Minmin</p></a></li>
+        </div>
+        <div class="character steve">
+            <li><a href="#"><img id="77" src="{{url_for('static', filename='images/77.png')}}" alt="Steve Icon" ></img><p style="display:none">Steve</p></a></li>
+        </div>
+        <div class="character sephiroth">
+            <li><a href="#"><img id="78" src="{{url_for('static', filename='images/78.png')}}" alt="Sephiroth Icon" ></img><p style="display:none">Sephiroth</p></a></li>
+        </div>
+        <div class="character pyra">
+            <li><a href="#"><img id="79" src="{{url_for('static', filename='images/79.png')}}" alt="Pyra Icon" ></img><p style="display:none">Pyra</p></a></li>
+        </div>
+        <div class="character mythra">
+            <li><a href="#"><img id="80" src="{{url_for('static', filename='images/80.png')}}" alt="Mythra Icon" ></img><p style="display:none">Mythra</p></a></li>
+        </div>
+        <div class="character kazuya">
+            <li><a href="#"><img id="81" src="{{url_for('static', filename='images/81.png')}}" alt="Kazuya Icon" ></img><p style="display:none">Kazuya</p></a></li>
+        </div>
+        <div class="character sora">
+            <li><a href="#"><img id="82" src="{{url_for('static', filename='images/82.png')}}" alt="Sora Icon" ></img><p style="display:none">Soraa</p></a></li>
+        </div>
+        <div class="character random">
+            <li><a href="#"><img id="83" src="{{url_for('static', filename='images/random.png')}}" alt="Random Icon" ></img><p style="display:none">Random</p></a></li>
+        </div>
+        <div class="character info">
+            <li><a href="#"><img id="84" src="{{url_for('static', filename='images/info.png')}}" alt="Info Icon" ></img><p style="display:none">Info</p></a></li>
+        </div>
     </ul>
-</div>
 <!-- Search Bar -->
 <div class="form-control">
         <input id="search" type="text" placeholder="Search" onkeyup="myFunction()" class="input input-outline w-full">
 <div>
+</div> <!--For Grid-->
 <!------------------------------------------------------------------------------------------->
 </body>
 </html>

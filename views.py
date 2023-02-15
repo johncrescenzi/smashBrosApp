@@ -14,6 +14,6 @@ def home():
     return render_template("index.html", image=file)
 
 ## Pass in a parameter from HTML
-@views.route("/profile/<username>")
-def profile(username):
-    return render_template("index.html", name=username)
+@views.route("/moves/<charactername>")
+def profile(charactername):
+    return render_template("moves.html", name=charactername)
